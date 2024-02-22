@@ -1,0 +1,23 @@
+.search-bar {
+  width: 100%;
+}
+
+.top-container {
+  margin-bottom: 20px;
+}
+
+.weather-grid {
+  margin: 10px 0px 20px 0px;
+}
+
+.message-text { 
+  margin: 10px 0;
+}
+
+.weather-card-col {
+margin-bottom: 20px;
+}
+
+.location-name-col {
+  margin-top: 20px;
+}
