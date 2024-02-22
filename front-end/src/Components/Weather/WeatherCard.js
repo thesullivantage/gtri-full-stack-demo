@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 
-/* Individual grid component for each day's weather */
+/* Individual grid component for each day's weather. */
 
 const WeatherCard = ({ date, tHigh, tLow, minPrecip, maxPrecip }) => {
     return (
