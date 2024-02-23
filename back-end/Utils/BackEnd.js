@@ -52,7 +52,6 @@ function ParseWeatherDat(weather_data, station, timezone_info) {
         // re-assign existing time fields to adjusted ones
         obj['time'] = offset_dat['time'];
         obj['day'] = offset_dat['day'];
-        console.log('new obj: ', JSON.stringify(obj, null, '\t'));
         return obj;
     })
 

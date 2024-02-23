@@ -11,6 +11,7 @@
 - Geocode: https://api.opencagedata.com/geocode/v1/json?q=${city},+${state}&key=${key}`);
     - Returns latitude, longitude pair.
     - In addition to timezone information for location to give us offset (in seconds) from UTC time.
+    - NOTE: appears to return "guessed" geolocation data for locations formatted properly, as long as 2-letter state abbreviation exists. More development needed. 
 - Query weather metadata with lat, long:
     - Return a number of fields. The one of interest is a list of observationStations by location.
 - Query observationStations: 
