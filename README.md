@@ -12,7 +12,7 @@
 2. `front-end`
   - run `npm install`
   - run `npm start`
-  - 
+
 3. `back-end`
   - Obtain OpenCage API key; store in `back-end/.env` as `OPENCAGE_GEOCODE_KEY`
   - Ensure that `localhost:8080` is not in use
