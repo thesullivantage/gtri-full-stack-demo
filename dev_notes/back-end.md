@@ -31,13 +31,13 @@
     - Further development could account for fringe locations in which location of the observation location differs from the location queried from City, ST.  
 
 - Third: forEach function groups observations (1 per hour) by day in the following format:
-    - Object[day] = Array(observation Objects)
+    - `Object[day] = Array(observation Objects)`
 
 - Fourth: global params (units and station abbreviation) are grouped into the top level of a JSON object
-    - forEach function loops through each day (after conversion to day by Object.entries())
+    - forEach function loops through each day (after conversion to day by `Object.entries()`)
         - max, min values are set arbitrarily low and high for temperature and precipitation
         - forEach function (all observations per day)
             - check min, max values up to current observation (iteration) and update
         - max, min values stored per day
     - global params and min, max values per day are returned in this object. 
-    - Hence, reducing $7 \cdot 24 observations$ to 7 for the purpose of scalability.
+    - Hence, reducing $7 \cdot 24$ observations to $7$ for the relevant (required) use-case.
